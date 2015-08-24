@@ -18,8 +18,11 @@
     </p>
   </div>
   <div class="col-md-4">
-    <div class="text-muted">
-      Comments go here
+    <div ng-repeat='comment in comments track by $index'class="text-muted">
+      {{comment}}
+    </div>
+    <div class='text-muted' ng-hide='comments.length > 0'>
+      No comments yet
     </div>
   </div>
 </div>

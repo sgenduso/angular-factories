@@ -1,1 +1,8 @@
-Yo!
+<form class='form-inline' ng-submit='addComment()'>
+  <input class='form-control' ng-model='comment' type="text">
+  <input type="submit" class='btn btn-primary' value="submit">
+</form>
+
+<div ng-repeat="comment in comments track by $index">
+  {{comment}}
+</div>
